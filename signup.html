@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>SignUp</title>
+    <link rel="stylesheet" href="signup.css" />
+    <script>
+      function details() {
+        let name = document.getElementById("name").value;
+        let age = document.getElementById("age").value;
+        let qual = document.getElementById("qual").value;
+        let city = document.getElementById("city").value;
+
+        let str = `${name} | ${age} | ${qual} | ${city}`;
+        msg.innerHTML = str;
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="box">
+    <p><input type="text" id="name" placeholder="Enter Name" /></p>
+    <p><input type="number" id="age" placeholder="Enter Age" /></p>
+    <p><input type="text" id="qual" placeholder="Enter Qualification" /></p>
+    <p><input type="text" id="city" placeholder="Enter City" /></p>
+
+    <p><button onclick="details()">Submit</button></p>
+    <div id="msg"></div>
+  </div>
+  </div>
+  </body>
+</html>

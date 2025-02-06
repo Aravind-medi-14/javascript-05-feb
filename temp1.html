@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script>
+      function f1() {
+        let v = document.getElementById("name").value;
+        //alert(v);
+        //alert("WELCOME BACK " + v + "!");
+        //msg.innerHTML = v * v;
+        if (v < 40) {
+          msg.innerHTML = "Better Luck Next time";
+        } else {
+          msg.innerHTML = "Promoted to next level !!";
+        }
+        // if (v < 40) {
+        //   console.log("Lost the game :(");
+        // } else {
+        //   console.log("You win !!");
+        // }
+      }
+    </script>
+  </head>
+  <body>
+    <input type="number" id="name" placeholder="Enter here" />
+    <button onclick="f1()">Submit</button>
+    <hr />
+
+    <div id="msg"></div>
+  </body>
+</html>
