@@ -19,8 +19,10 @@
   <body>
     <div class="container">
       <div class="box">
-        <p><input type="number" id="num" placeholder="Enter Number" /></p>
-        <p><button onclick="table()" id="btn">Submit</button></p>
+        <p><input type="number" id="num" placeholder="Enter Number" onchange="table()"/></p>
+        <p>
+          <button onclick="table()" id="btn" >Submit</button>
+        </p>
         <div id="msg"></div>
       </div>
     </div>
